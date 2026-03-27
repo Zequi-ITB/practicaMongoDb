@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     kotlin("jvm") version "2.3.0"
 }
@@ -11,6 +13,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation("org.mongodb:mongodb-driver-sync:4.9.0")
 }
 
 kotlin {
